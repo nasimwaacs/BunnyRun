@@ -10,6 +10,7 @@ class Bunny(pygame.sprite.Sprite):
 		w = self.image.get_width()*scale_x
 		h = self.image.get_height()*scale_y
 		self.image = pygame.transform.scale(self.image, (w, h))
+		#self.image = pygame.transform.flip(self.image, True, True)
 		self.rect = self.image.get_rect()
 
 		self.x = x
